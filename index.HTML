@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Study Schedule</title>
+
+    <style>
+        body{
+            font-family: Arial;
+            margin: 0;
+            background: linear-gradient(to right, #667eea, #764ba2);
+            color: #333;
+        }
+
+        header{
+            text-align: center;
+            padding: 20px;
+            background: #222;
+            color: white;
+        }
+
+        .container{
+            padding: 20px;
+        }
+
+        
+    .card{
+            background: white;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 12px;
+            box-shadow: 0 0 10px gray;
+            transition: 0.3s;
+            height: 100%;
+        }
+
+        .card:hover{
+            transform: scale(1.02);
+        }
+
+        table{
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td{
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+
+        th{
+            background: #4CAF50;
+            color: white;
+        }
+
+        progress{
+            width: 100%;
+            height: 20px;
+        }
+
+        button{
+            padding: 10px 20px;
+            background: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            border-radius: 10px;
+            transition: 0.4s;
+        }
+
+        button:hover{
+            background: #45a049;
+            transform: scale(1.1);
+        }
+
+        textarea{
+            width: 100%;
+            height: 100px;
+        }
+
+        fieldset{
+            border: 2px solid #4CAF50;
+            border-radius: 10px;
+            padding: 10px;
+        }
+
+        legend{
+            font-weight: bold;
+        }
+
+        iframe{
+            width: 100%;
+            border-radius: 10px;
+
+        }
+
+        marquee{
+            color: yellow;
+            font-weight: bold;
+        }
+        .video{
+            background: white;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 12px;
+            box-shadow: 0 0 10px gray;
+            transition: 0.3s;
+            height: 100%;
+            width: 100%;
+        }
+
+        .video:hover{
+            transform: scale(1.02);
+        }
+
+
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>📚 Study Schedule Website</h1>
+    <marquee>🔥 Stay Focused, Study Daily, Achieve Success! 🔥</marquee>
+</header>
+
+<div class="container">
+
+    
+    <div class="card">
+        <h2>📅 Weekly Timetable</h2>
+        <table>
+            <tr>
+                <th>Day</th>
+                <th>Subject</th>
+            </tr>
+            <tr><td>Monday</td><td>HTML</td></tr>
+            <tr><td>Tuesday</td><td>CSS</td></tr>
+            <tr><td>Wednesday</td><td>C Programming</td></tr>
+            <tr><td>Thursday</td><td>Math</td></tr>
+            <tr><td>Friday</td><td>Electronics</td></tr>
+            <tr><td>Saturday</td><td>C Programming</td></tr>
+            <tr><td>Sunday</td><td>Practice</td></tr>
+
+        </table>
+    </div>
+
+    
+    <div class="card">
+        <fieldset>
+            <legend>🎯 Today's Goals</legend>
+            <ul>
+                <li>Complete HTML Chapter</li>
+                <li>Practice 5 Programs</li>
+            </ul>
+        </fieldset>
+    </div>
+
+    
+    <div class="card">
+        <h2>📊 Progress</h2>
+        <progress value="70" max="100"></progress>
+    </div>
+
+   
+    <div class="card">
+        <h2>📝 Notes</h2>
+
+        <b><textarea placeholder="Address">Write HTML short Note</textarea></b>
+        <b><textarea placeholder="Address">Write PIC short Note</textarea></b>
+    </div>
+
+    
+    <div class="card">
+        <h2>🚀 start Study</h2>
+       <button oneclick=startstudy()>Start Now</button>
+
+    </div>
+    <div class="card">
+        <h2>⏸️ Pause</h2>
+        <button>Pause</button>
+
+    </div>
+<div class="card">
+        <h2>🔄 Reset</h2>
+        <button>Reset</button>
+
+    </div>
+
+
+    
+    <div class="video">
+        <h2>🎥 Study Video</h2>
+        <iframe height="250"
+        src="https://www.youtube.com/embed/tVzUXW6siu0">
+        </iframe>
+       
+    </div>
+
+</div>
+<script>
+        function startstudy()
+         {
+            alert("study started");
+        }
+    </script>
+
+</body>
+
+
+</html>
